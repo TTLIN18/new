@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="../css/galeria.css">
+</head>
+<body >
+    <header>
+        <nav class="nav">
+            <img class="logo-blanco" src="../sources/logo-blanco-2.png" alt="Logo Blanco">
+            <ul class="menu">
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="galeria.html">GALERIA</a></li>
+                <li><a href="presupuesto.html">PRESUPUESTO</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <div class="ful-img" id="fulImgBox">
+        <img src="sources/1.jpg" id="fulImg" alt="">
+        <span onclick="closeImg()">X</span>
+    </div>
+
+    <h1><span>Image Gallery</span></h1>
+
+    <div class="img-gallery">
+        <img src="../sources/8afe7e6c09ecbaa6eeb30616f67b4639.jpg" onclick="openFulImg(this.src)" alt="">
+        <img src="../sources/1050408.jpg" onclick="openFulImg(this.src)" alt="">
+        <img src="../sources/casa-kame-de-dragon-ball_1280x720_xtrafondos.com.jpg" onclick="openFulImg(this.src)" alt="">
+        <img src="../sources/d55b6c725a66bd51dde099652c95cda4.jpg" onclick="openFulImg(this.src)" alt="">
+    
+    </div>
+    <script src="../js/galeria.js"></script>
+
+    <footer>
+        <img class="logo-blanco-footer" src="../sources/logo-blanco-2.png" alt="Logo Blanco">
+        <p>Calle San Vicente Mártir 7, pta. 7, planta 4 | 46002 Valencia | España | Pixels &COPY; Derechos Reservados 2024 | <a href="aviso_legal.html">Aviso legal</a> |</p>
+        <a href="#"><img class="social" src="../sources/instagram.png" alt="Instagram"></a>
+        <a href="#"><img class="social" src="../sources/twitter.png" alt="Twitter"></a>
+    </footer>
+</body>
+</html>

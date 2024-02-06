@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixels</title>
+    <link rel="stylesheet" type="text/css" href="../css/presupuesto.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <img class="logo-blanco" src="../sources/logo-blanco-2.png" alt="Logo Blanco">
+            <ul class="menu">
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="galeria.html">GALERIA</a></li>
+                <li><a href="presupuesto.html">PRESUPUESTO</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="scroll"></div>
+    <script src="../js/menu.js"></script>
+
+    <main>
+        <h2>Datos de presupuesto:</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" maxlength="15">
+            </div>
+            <div class="form-group">
+                <label for="surname">Apellidos:</label>
+                <input type="text" id="surname" name="surname" maxlength="40">
+            </div>
+            <div class="form-group">
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" maxlength="9">
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <h2>Opciones de Presupuesto</h2>
+            <div class="form-group">
+                <label for="product">Producto:</label>
+                <select id="product" name="product">
+                    <option value="100">Producto 1 - $100</option>
+                    <option value="150">Producto 2 - $150</option>
+                    <option value="200">Producto 3 - $200</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="plazo">Plazo (en meses):</label>
+                <input type="number" id="plazo" name="plazo" min="0" max="12">
+            </div>
+            <div class="form-group-extras">
+                <label for="extra1">Extra 1 (+$50):</label>
+                <input type="checkbox" id="extra1" name="extras[]" value="50">
+            </div>
+            <div class="form-group-extras">
+                <label for="extra2">Extra 2 (+$75):</label>
+                <input type="checkbox" id="extra2" name="extras[]" value="75">
+            </div>
+            <div class="form-group-extras">
+                <label for="extra3">Extra 3 (+$100):</label>
+                <input type="checkbox" id="extra3" name="extras[]" value="100">
+            </div>
+            <div class="form-group">
+                <label for="presupuesto">Presupuesto:</label>
+                <output for="product plazo extras" id="presupuesto"></output>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">Acepto las condiciones de privacidad</label>
+            </div>
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+                <button type="reset">Resetear</button>
+            </div>
+        </form>
+    <script src="../js/presupuesto.js"></script>
+</main>
+
+<footer>
+    <img class="logo-blanco-footer" src="../sources/logo-blanco-2.png" alt="Logo Blanco">
+    <p>Calle San Vicente Mártir 7, pta. 7, planta 4 | 46002 Valencia | España | Pixels &COPY; Derechos Reservados 2024 | <a href="aviso_legal.html">Aviso legal</a> |</p>
+    <a href="#"><img class="social" src="../sources/instagram.png" alt="Instagram"></a>
+    <a href="#"><img class="social" src="../sources/twitter.png" alt="Twitter"></a>
+</footer>
+
+</body>
+</html>

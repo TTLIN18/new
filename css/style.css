@@ -1,0 +1,232 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 200px;
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+}
+
+body{
+    background-color: #000;
+}
+
+.nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    transition: all 0.5s ease;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #000;
+    z-index: 99;
+}
+
+.nav.active{
+    background: #181818;
+    padding: 15px;
+}
+
+.logo-blanco{
+    width: 15%;
+    height: 15%;
+}
+
+.logo-blanco-footer{
+    width: 15%;
+    height: 15%;
+    padding-right: 10px;
+}
+
+.menu{
+    display: flex;
+}
+.menu li{
+    list-style: none;
+    margin: 10px;
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.menu li a:hover{
+    padding: 5px 10px;
+    background: white;
+    color: #000;
+    border-radius: 15px;
+}
+
+.scroll{
+    height: 100px;
+}
+
+.section-1{
+    display: flex;
+    flex-direction: column;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(sources/1050408.jpg) ;
+    background-size: 100% 110%;
+    
+}
+
+.section-1 p{
+    font-size: 25px;
+    width: 100%;
+
+    padding: 1% 20% 1% 20%;
+}
+
+.section-2{
+    display: flex;
+    flex-direction: column;
+    background-image: url(sources/blob-scene-haikei.svg);
+    background-size: cover;
+    padding: 60px;
+}
+
+.section-2 p{
+    font-size: 25px;
+    width: 100%;
+    padding: 1% 20% 1% 20%;
+}
+
+.tarjetas-contenedor { 
+    display: flex; 
+    justify-content: space-around; 
+    
+}
+
+.tarjeta { 
+    flex: 1; 
+    margin: 50px; 
+    padding: 50px; 
+    border: 3px solid #ccc; 
+    border-radius: 30px;
+    border-style: dashed;
+    text-align: center; 
+    max-width: 20%;
+    height: 50%;
+    background-color:  #ffffff05;
+}
+
+.tarjeta a{ 
+    text-decoration: none;   
+}
+
+.tarjeta:hover{
+    background-color:  #ffffff1f;
+}
+
+.section-3{
+    background-image: url(sources/low-poly-grid-haikei.svg);
+    padding: 60px 30% 60px
+}
+
+.section-3 h2{
+    padding-bottom: 20px;
+}
+
+.section-3 li{
+    padding: 10px;
+}
+
+.section-4{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url( sources/casa-kame-de-dragon-ball_1280x720_xtrafondos.com.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 20% 100px;
+    text-align: center;
+}
+
+button{
+    max-width: 10%;
+    align-items: center;
+    margin:1% 45% 1% 45%;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: #181818;
+    border-style: dashed;
+    border-color: white;
+    justify-content: center;
+}
+
+button a{
+    text-decoration: none;
+}
+
+button:hover{
+    color:#181818;
+    background-color:  #ffffff1f;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(25px);
+    border-color: #181818;
+    transition: all 0.2s ease-in;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center ;
+    background-color: #181818;
+    width: 100%;
+    position: sticky;
+    
+}
+footer p{
+    font-size: 15px;
+}
+
+.social{
+    padding-left: 15px;
+}
+
+.error {
+    color: red;
+}
+
+.boton10 {
+    min-width: 50px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #212529;
+    background: #212529;
+    text-align: center;
+    margin: 0 auto; 
+    text-decoration: none;
+}
+
+.boton10:hover {
+    background: #fff;
+    color: #212529;
+}
+
+.mapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
